@@ -1,29 +1,8 @@
-/* function Navbar() {
-    return (
-      <div className="bg-[#3A3D3F] rounded-[4px] text-white absolute left-[10%] top-[20%] flex flex-row w-[80%] h-[5%] items-center justify-between px-[2%]">
-        <span className="text-[20px] font-sec">15</span>
-        <span className="text-[20px] font-sec">60</span>
-        <span className="text-[20px] font-sec">120</span>
-        <span>|</span>
-        <span className="text-[20px] font-sec">Words</span>
-        <span className="text-[20px] font-sec">Quotes</span>
-        <span className="text-[20px] font-sec">Number</span>
-        <span>|</span>
-        <span className="text-[20px] font-sec">Easy</span>
-        <span className="text-[20px] font-sec">Normal</span>
-        <span className="text-[20px] font-sec">Hard</span>
-      </div>
-    );
-  }
-  
-  export default Navbar; */
-  // Navbar.jsx
-// Add this import at the top
+
 
 import React from 'react';
 
 function Navbar({ onSelect, disabled, selectedOptions = {} }) {
-  // Add the optionsConfig definition here
   const optionsConfig = [
     {
       group: 'time',

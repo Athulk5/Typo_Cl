@@ -7,5 +7,5 @@ export const formSchema = z.object({
   confirmPassword: z.string().min(6, { message: "Confirm your password." }),
 }).refine((data) => data.password === data.confirmPassword, {
   message: "Passwords do not match.",
-  path: ["confirmPassword"], // Error shown under confirmPassword field
+  path: ["confirmPassword"], 
 })
