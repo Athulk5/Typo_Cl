@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { formSchema } from "../schemas/formSchema"
+import { formSchema } from "../Schemas/formSchema"
 import { Link, useNavigate } from "react-router-dom" 
 import account from '../assets/account.png';
 
