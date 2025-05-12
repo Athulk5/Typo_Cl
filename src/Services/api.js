@@ -1,11 +1,10 @@
 import axios from 'axios';
 
-// Create axios instance with default credentials
 const apiClient = axios.create({
   withCredentials: true,
   baseURL: import.meta.env.DEV 
     ? 'http://localhost:5000/api' 
-    : '/api',
+    : 'https://typo-se.onrender.com/api',
   timeout: 10000
 });
 

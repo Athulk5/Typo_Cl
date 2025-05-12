@@ -58,7 +58,7 @@ export function SignupForm() {
 
     try {
       console.log("📦 Sending form values:", values)
-      const response = await fetch("http://localhost:5000/auth/register", {
+      const response = await fetch("https://typo-se.onrender.com/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

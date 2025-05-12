@@ -30,7 +30,7 @@ export default function AccountDetails() {
     
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/auth/me', {
+        const response = await axios.get('https://typo-se.onrender.com/auth/me', {
           withCredentials: true,
           signal: controller.signal, // Add abort signal
           headers: {
@@ -73,7 +73,7 @@ export default function AccountDetails() {
     e.preventDefault();
     try {
       const response = await axios.patch(
-        'http://localhost:5000/auth/update-username',
+        'https://typo-se.onrender.com/auth/update-username',
         { username },
         { withCredentials: true }
       );
@@ -94,7 +94,7 @@ export default function AccountDetails() {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:5000/auth/logout', {}, {
+      await axios.post('https://typo-se.onrender.com/auth/logout', {}, {
         withCredentials: true,
         headers: {
           'Content-Type': 'application/json'

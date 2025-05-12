@@ -46,7 +46,7 @@ export function Login() {
       values.email = values.email.trim();
       values.password = values.password.trim();
       
-      const response = await axios.post("http://localhost:5000/auth/login", values, {
+      const response = await axios.post("https://typo-se.onrender.com/auth/login", values, {
         withCredentials: true
       });
 
