@@ -3,7 +3,7 @@ import Navbar from './Components/navbar'
 import HomePage from './Pages/HomePage'
 import Signlogin from './Pages/Sign-login';
 import Login from './Pages/login';
-import Leaderboard from "./Pages/Leaderboard";
+import Leaderboard from "./Pages/LeaderBoard";
 import AccountDetails from './Pages/AccountDetails';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
